@@ -25,7 +25,7 @@ else
             counter+=1
         }
         else{
-            if(counter>=100){
+            if(counter>=100000){
                 age=2021-(sumYears/counter)
                 print age, brand
             }
