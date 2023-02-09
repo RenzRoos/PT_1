@@ -16,7 +16,7 @@ else
 
 
     #pipeline
-    bzcat $1 | awk -F "," '{if ($2 == "Personenauto") {print $3, $21} }'  | awk -F "/" '{print $1, $3}' | awk -F " " '{ if(NF > 1 ) { $(NF-1)=""; print $0} }'|
+    bzcat $1 | awk -F "," '{if ($2 == "Personenauto" && $21 != "") {print $3, $21} }'  | awk -F "/" '{print $1, $3}' | awk -F " " '{ if(NF > 1 ) { $(NF-1)=""; print $0} }'|
     awk '{ $(NF-1)=$(NF-1)","}1' | sort |  
     awk -F "," '{
         
