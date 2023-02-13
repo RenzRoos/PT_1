@@ -3,12 +3,12 @@
 
 #!/bin/sh
 
-#bestandsnaam meegegeven? 
+#Is filename given? 
 if [ -z "$1"  ]; then 
     #error
     echo "Geen file in aanroeping.\nRoep aan met \"./pipeline4.sh [FILE]\""
 else
-    
+    #vars
     brand=""
     sumYears=0 
     counter=0

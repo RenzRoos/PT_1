@@ -3,7 +3,7 @@
 
 #!/bin/sh
 
-#bestandsnaam meegegeven? 
+#Is filename given? 
 if [ -z "$1"  ]; then 
     #error
     echo "Geen file in aanroeping.\nRoep aan met \"./pipeline5.sh [FILE]\""

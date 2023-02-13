@@ -8,7 +8,7 @@ import sys
 import datetime
 
 def dayCalc():
-    #variabelem
+    #vars
     data = sys.stdin.read()
     data = data.split("\n")
     count = [0, 0, 0, 0, 0, 0, 0]

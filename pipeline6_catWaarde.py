@@ -7,7 +7,7 @@
 import sys
 
 def catWaarde():
-    #variabelen
+    #vars
     data = sys.stdin.read()
     data = data.split("\n")
 
