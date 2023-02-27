@@ -12,8 +12,6 @@ else
     brand=""
     sumYears=0 
     counter=0
-    age=0
-
 
     #pipeline
     bzcat $1 | awk -F "," '{if ($2 == "Personenauto" && $21 != "") {print $3, $21} }'  | awk -F "/" '{print $1, $3}' | awk -F " " '{ if(NF > 1 ) { $(NF-1)=""; print $0} }'|
@@ -26,8 +24,7 @@ else
         }
         else{
             if(counter>=100000){
-                age=2021-(sumYears/counter)
-                print age, brand
+                print 2021-(sumYears/counter), brand
             }
             brand=$1
             sumYears=$2
